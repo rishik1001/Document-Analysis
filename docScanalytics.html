@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Upload Image</title>
+    <style>
+      /* CSS for the body */
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://images.pexels.com/photos/163269/sunset-beach-sea-landscape-163269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* CSS for the container */
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+      }
+
+      /* CSS for the header */
+      .header {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      /* CSS for the form */
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* CSS for the input file label */
+      .input-file-label {
+        background-image: url("https://cdn.iconscout.com/icon/free/png-256/upload-142323-1163103.png");
+        background-size: 20px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 10px 10px 10px 40px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: #333;
+      }
+
+      /* CSS for the input file field */
+      .input-file {
+        display: none;
+      }
+
+      /* CSS for the submit button */
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* CSS for the link */
+      a {
+        color: #4CAF50;
+        text-decoration: none;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Upload Image</h1>
+      </div>
+      <form>
+        <label for="file" class="input-file-label">Choose a file</label>
+        <input type="file" id="file" name="file" class="input-file">
+        <input type="submit" value="Upload">
+      </form>
+      <a href="#">Cancel</a>
+    </div>
+  </body>
+</html>

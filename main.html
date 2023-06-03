@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home page</title>
+  <link rel="stylesheet" type="text/css" href="nav.css">
+
+<body>
+  <header>
+    <!--<div class="logo">
+      <img src="logo.png" alt="Logo">
+      <h3></h3>
+    </div>-->
+    <nav>
+      <ul>
+        <l1 class="title"> <a  style = "color:white"> DocScanalytics</a></l1>
+      </ul>
+    </nav>
+    <!--<div class="auth">
+      <a href="se3.html">Login</a>
+      <a href="signupse.html">Signup</a>
+    </div>-->
+  </header>
+  <div class="main">
+    <div class="div1">
+      <center>
+        <marquee direction = "left"><p style="padding-top:190px;font-size: xx-large;font-style: inherit;"><b>WE MAKE READING A DOCUMENT EASY!!!!</b></p></marquee>
+      </center>
+      <center>
+        <p style="padding-top:5px;font-size: x-large;">All the tools you'll need to be more productive and work smarter
+          with documents.</p>
+      </center>
+      
+        <center><button class="btn1" onclick="window.location.href = 'se3.html';">Get Started</button>
+        <button class="btn2"onclick="window.location.href = 'main2.html';">Explore All Tools</button></center>
+      
+    </div>
+    <div class="div2">
+      <img src = "icon1.gif" style = "height:100%;width: 100%">
+    </div>
+  </div>
+</body>
+</head>
+<script>
+  const links = document.querySelectorAll('nav a');
+
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</html>
